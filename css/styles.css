@@ -35,12 +35,20 @@ body {
 
 .site-nav-item {
   display: inline-block;
+  /* margin-right: 50px; */
 }
+
+/* .site-nav-item:not(:last-child) {
+  /* margin-right: 0; */
+
 .container {
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+  margin: 0 auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 15px;
   /* padding-left: 15px;
   padding-right: 15px; */
   outline: 2px solid aqua;
@@ -100,19 +108,10 @@ span,
 .hero-title {
   max-width: 696px;
   margin: 0 auto 30px;
-
-  /* height: 120px; */
-
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-bottom: 30px;
-
-  /* min-width: 696px; */
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -142,10 +141,13 @@ span,
 /* Sections */
 
 .container-section {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+  margin: 0 auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  max-width: 1200px;
   outline: 2px solid black;
+  width: 100%;
+  padding: 0px 15px;
 }
 
 .section {
