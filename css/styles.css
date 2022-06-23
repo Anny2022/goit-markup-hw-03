@@ -98,8 +98,9 @@ span,
   text-align: center;
 }
 .hero-title {
-  min-width: 696px;
-  min-height: 120px;
+  max-width: 696px;
+  margin: 0 auto 30px;
+
   /* height: 120px; */
 
   margin-top: 0;
