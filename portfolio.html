@@ -9,25 +9,36 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="page-header">
-      <nav class="nav-header">
-        <a href="./index.html" class="text-logo"><span>Web</span>Studio</a>
-        <ul class="site-nav list">
-          <li><a class="link" href="./index.html">Студия</a></li>
-          <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="#Contacts">Контакты</a></li>
+      <div class="container">
+        <nav class="nav-header">
+          <a href="./index.html" class="text-logo"><span>Web</span>Studio</a>
+          <ul class="site-nav list">
+            <li class="item"><a class="link" href="./index.html">Студия</a></li>
+            <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
+            <li class="item"><a class="link" href="#Contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="site-cont list">
+          <li class="item">
+            <a class="link-cont" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="item"><a class="link-cont" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="site-cont list">
-        <li><a class="link-cont" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link-cont" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section class="portfolio">
+      <section class="portfolio section">
         <h1>Портфолио</h1>
         <nav class="nav-filter">
           <ul class="filter">
@@ -38,59 +49,114 @@
             <li><button class="button" type="button">Маркетинг</button></li>
           </ul>
         </nav>
-        <ul class="images">
-          <li>
-            <img class="img" src="./images/img5.jpg" width="370" height="294" alt="Веб-сайт" />
-            <h2 class="title-img">Технокряк</h2>
-            <p class="text-img">Веб-сайт</p>
-          </li>
-          <li>
-            <img class="img" src="./images/img6.jpg" width="370" height="294" alt="Постер" />
-            <h2 class="title-img">Постер New Orlean vs Golden Star</h2>
-            <p class="text-img">Дизайн</p>
-          </li>
-          <li>
-            <img
-              class="img"
-              src="./images/img7.jpg"
-              width="370"
-              height="294"
-              alt="Логотип ресторана Seafood"
-            />
-            <h2 class="title-img">Ресторан Seafood</h2>
-            <p class="text-img">Приложение</p>
-          </li>
-          <li>
-            <img class="img" src="./images/img8.jpg" width="370" height="294" alt="Наушники" />
-            <h2 class="title-img">Проект Prime</h2>
-            <p class="text-img">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/img9.jpg" width="370" height="294" alt="Упаковка боксы" />
-            <h2 class="title-img">Проект Boxes</h2>
-            <p class="text-img">Приложение</p>
-          </li>
-          <li>
-            <img src="./images/img10.jpg" width="370" height="294" alt="Компьютер" />
-            <h2 class="title-img">Inspiration has no Borders</h2>
-            <p class="text-img">Веб-сайт</p>
-          </li>
-          <li>
-            <img src="./images/img11.jpg" width="370" height="294" alt="Журнал" />
-            <h2 class="title-img">Издание Limited Edition</h2>
-            <p class="text-img">Дизайн</p>
-          </li>
-          <li>
-            <img src="./images/img12.jpg" width="370" height="294" alt="Лейбл" />
-            <h2 class="title-img">Проект LAB</h2>
-            <p class="text-img">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/img13.jpg" width="370" height="294" alt="Ноутбук" />
-            <h2 class="title-img">Growing Business</h2>
-            <p class="text-img">Приложение</p>
-          </li>
-        </ul>
+        <div class="container-portfolio">
+          <ul class="card-set">
+            <li class="item-card">
+              <article class="card">
+                <div class="card-thumb">
+                  <img src="./images/img5.jpg" width="370" height="294" alt="Веб-сайт" />
+                </div>
+              </article>
+              <div class="card-content">
+                <h2 class="card-heading">Технокряк</h2>
+                <p class="card-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="item-card">
+              <article class="card">
+                <div class="card-thumb">
+                  <img src="./images/img6.jpg" width="370" height="294" alt="Постер" />
+                </div>
+              </article>
+              <div class="card-content">
+                <h2 class="card-heading">Постер New Orlean vs Golden Star</h2>
+                <p class="card-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="item-card">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/img7.jpg"
+                    width="370"
+                    height="294"
+                    alt="Логотип ресторана Seafood"
+                  />
+                </div>
+              </article>
+              <div class="card-content">
+                <h2 class="card-heading">Ресторан Seafood</h2>
+                <p class="card-text">Приложение</p>
+              </div>
+            </li>
+            <li class="item-card">
+              <article class="card">
+                <div class="card-thumb">
+                  <img src="./images/img8.jpg" width="370" height="294" alt="Наушники" />
+                </div>
+              </article>
+              <div class="card-content">
+                <h2 class="card-heading">Проект Prime</h2>
+                <p class="card-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="item-card">
+              <article class="card">
+                <div class="card-thumb">
+                  <img src="./images/img9.jpg" width="370" height="294" alt="Упаковка боксы" />
+                </div>
+              </article>
+              <div class="card-content">
+                <h2 class="card-heading">Проект Boxes</h2>
+                <p class="card-text">Приложение</p>
+              </div>
+            </li>
+            <li class="item-card">
+              <article class="card">
+                <div class="card-thumb">
+                  <img src="./images/img10.jpg" width="370" height="294" alt="Компьютер" />
+                </div>
+              </article>
+              <div class="card-content">
+                <h2 class="card-heading">Inspiration has no Borders</h2>
+                <p class="card-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="item-card">
+              <article class="card">
+                <div class="card-thumb">
+                  <img src="./images/img11.jpg" width="370" height="294" alt="Журнал" />
+                </div>
+              </article>
+              <div class="card-content">
+                <h2 class="card-heading">Издание Limited Edition</h2>
+                <p class="card-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="item-card">
+              <article class="card">
+                <div class="card-thumb">
+                  <img src="./images/img12.jpg" width="370" height="294" alt="Лейбл" />
+                </div>
+              </article>
+              <div class="card-content">
+                <h2 class="card-heading">Проект LAB</h2>
+                <p class="card-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="item-card">
+              <article class="card">
+                <div class="card-thumb">
+                  <img src="./images/img13.jpg" width="370" height="294" alt="Ноутбук" />
+                </div>
+              </article>
+              <div class="card-content">
+                <h2 class="card-heading">Growing Business</h2>
+                <p class="card-text">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
