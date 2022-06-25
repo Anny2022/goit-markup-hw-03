@@ -60,7 +60,7 @@ img {
 
 /* Header */
 .page-header-portfolio {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .nav-header,
 .nav-filter {
@@ -218,7 +218,7 @@ span,
 .items,
 .team {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   width: 100%;
   margin-right: calc(-1 * var(--card-set-gap));
@@ -228,6 +228,11 @@ span,
 .team > .team-item {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
+}
+
+.items > .item-text,
+.team > .team-item:nth-last-child(1) {
+  margin: right 0;
 }
 
 .title-item {
@@ -252,6 +257,10 @@ span,
 .items > .box {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
+}
+
+.team > .box:nth-last-child(-n + 3) {
+  margin: right 0;
 }
 
 .section-team {
@@ -291,9 +300,26 @@ span,
   background-color: var(--hero-bg-color);
 }
 
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 15px;
+}
 .footer-logo,
 .footer-text {
   color: var(--primary-bg-color);
+}
+
+.footer-logo {
+  margin-top: 60px;
+}
+
+.address {
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .footer-text,
@@ -306,6 +332,7 @@ span,
   line-height: 1.5;
 }
 .footer-link {
+  margin-top: 9px;
   line-height: 1.71;
   color: var(--footer-link-color);
   text-decoration: none;
@@ -321,7 +348,6 @@ span,
   display: flex;
   justify-content: space-between;
   width: 611px;
-  background-color: red;
   margin: 0;
   padding: 0;
   margin-bottom: 34px;
@@ -367,8 +393,18 @@ span,
   padding: 20px 24px;
 }
 
+.card-heading {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
 .card-text {
   margin-top: 4px;
+  color: var(--primary-text-color);
+  line-height: 1.88;
 }
 
 .portfolio {
@@ -385,6 +421,8 @@ span,
 
   background-color: var(--btn-bg-color);
   color: var(--title-text-color);
+  border: 1px solid #eeeeee;
+
   font-family: Roboto, sans-serif;
   font-style: inherit;
   font-size: 16px;
@@ -402,10 +440,10 @@ span,
   letter-spacing: 0.06em;
 }
 
-.text-img {
+/* .text-img {
   color: var(--primary-text-color);
   line-height: 1.88;
-}
+} */
 
 /* .test-container {
   width: 1230px;
